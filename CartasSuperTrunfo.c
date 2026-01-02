@@ -2,7 +2,7 @@
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+
 
 int main() {
     printf("Desafio: nível novato\n");
@@ -16,6 +16,9 @@ int main() {
     float area1;           
     float pib1;             
     int pontos1;
+    float densidade1;
+    float pib_capita1;
+
 
 
     char estado2;         
@@ -25,6 +28,8 @@ int main() {
     float area2;           
     float pib2;             
     int pontos2;
+    float densidade2;
+    float pib_capita2;
 
 
   // Área para entrada de dados
@@ -55,6 +60,10 @@ int main() {
     scanf(" %d", &pontos1);
 
 
+    densidade1 = (float)populacao1 / area1;
+    pib_capita1 = (pib1 * 1000000000) / (float)populacao1;
+
+
 
     printf("\n-- Dados da Carta 2 --\n");
 
@@ -80,6 +89,9 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf(" %d", &pontos2);
 
+   densidade1 = (float)populacao1 / area1;
+   pib_capita1 = (pib1 * 1000000000) / (float)populacao1;
+
 
 
   // Área para exibição dos dados da cidade
@@ -92,6 +104,8 @@ int main() {
     printf("Área: %.2f km²\n", area1); 
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Pontos Turísticos: %d\n", pontos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: %.2f reais\n", pib_capita1);
 
 
 
@@ -103,6 +117,8 @@ int main() {
     printf("Área: %.2f km²\n", area2); 
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Pontos Turísticos: %d\n", pontos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("PIB per Capita: %.2f reais\n", pib_capita2);
 
 return 0;
 } 
