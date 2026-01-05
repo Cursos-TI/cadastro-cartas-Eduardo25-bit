@@ -64,6 +64,7 @@ int main() {
 
     densidade1 = (float)populacao1 / area1;
     pib_capita1 = (pib1 * 1000000000) / (float)populacao1;
+    super_poder1 = (float)populacao1 + area1 + pib1 + (float)pontos1 + pib_capita1 + (1.0f / densidade1);
 
 
 
