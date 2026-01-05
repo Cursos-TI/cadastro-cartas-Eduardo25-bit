@@ -5,7 +5,7 @@
 
 
 int main() {
-    printf("Desafio: nível novato\n");
+    printf("Desafio: nível Mestre\n");
   // Área para definição das variáveis para armazenar as propriedades das cidades
 
 
@@ -18,6 +18,7 @@ int main() {
     int pontos1;
     float densidade1;
     float pib_capita1;
+    float super_poder1;
 
 
 
@@ -30,6 +31,7 @@ int main() {
     int pontos2;
     float densidade2;
     float pib_capita2;
+    float super_poder2;
 
 
   // Área para entrada de dados
