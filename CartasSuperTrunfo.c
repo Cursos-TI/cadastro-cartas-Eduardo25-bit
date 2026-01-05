@@ -94,6 +94,7 @@ int main() {
 
    densidade2 = (float)populacao2 / area2;
    pib_capita2 = (pib2 * 1000000000) / (float)populacao2;
+   super_poder2 = (float)populacao2 + area2 + pib2 + (float)pontos2 + pib_capita2 + (1.0f / densidade2);
 
 
 
@@ -109,6 +110,7 @@ int main() {
     printf("Pontos Turísticos: %d\n", pontos1);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
     printf("PIB per Capita: %.2f reais\n", pib_capita1);
+    printf("Super Poder: %.2f\n", super_poder1);
 
 
 
@@ -122,6 +124,7 @@ int main() {
     printf("Pontos Turísticos: %d\n", pontos2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: %.2f reais\n", pib_capita2);
+    printf("Super Poder: %.2f\n", super_poder2);
 
 return 0;
 } 
